@@ -9,4 +9,41 @@
   min-height: 100px;
 }
 
+.nav {
+  width: 100%;
+  min-height: 150px;
+  background-color: red;
+}
+
+.feature {
+  width: 100%;
+  min-height: 150px;
+  background-color: green;
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.previously {
+  width: 75%;
+  min-height: 150px;
+  background-color: yellow;
+  float: left;
+}
+
+.social {
+  width: 25%;
+  min-height: 150px;
+  background-color: blue;
+  float: right;
+}
+
+.footer {
+  width: 100%;
+  min-height: 150px;
+  background-color: pink;
+}
 /* End for testing */

@@ -1,0 +1,52 @@
+@font-face {
+  font-family: 'mochamattari';
+  src: url("../fonts/mochamattari.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+h1 {
+  font-family: mochamattari;
+  font-size: 40px; }
+
+/* For testing only */
+*:not(body):not(html) {
+  box-sizing: border-box;
+  border: 1px dashed #000; }
+
+.columns {
+  min-height: 100px; }
+
+.nav {
+  width: 100%;
+  min-height: 150px;
+  background-color: red; }
+
+.feature {
+  width: 100%;
+  min-height: 150px;
+  background-color: green; }
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table; }
+
+.previously {
+  width: 75%;
+  min-height: 150px;
+  background-color: yellow;
+  float: left; }
+
+.social {
+  width: 25%;
+  min-height: 150px;
+  background-color: blue;
+  float: right; }
+
+.footer {
+  width: 100%;
+  min-height: 150px;
+  background-color: pink; }
+
+/* End for testing */
+
+/*# sourceMappingURL=styles.css.map */
