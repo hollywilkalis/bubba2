@@ -1,6 +1,3 @@
-.lorem {
-  background-color: orange; }
-
 @font-face {
   font-family: 'mochamattari';
   src: url("../fonts/mochamattari.woff") format("woff");
@@ -11,22 +8,65 @@ h1 {
   font-family: mochamattari;
   font-size: 40px; }
 
+h2 {
+  color: #C4711D;
+  font-family: mochamattari;
+  font-size: 35px; }
+
+.card-title {
+  color: #3D507E;
+  font-family: mochamattari; }
+
+.button-main {
+  background-color: #3D507E;
+  color: white;
+  margin-top: 10px; }
+
+.footer {
+  width: 100vw;
+  height: 40vh; }
+
+.one-third {
+  width: 100vw;
+  height: 60%;
+  display: block; }
+
+.newsletter {
+  width: 100%;
+  height: 20%; }
+
+.contact-info, .follow-social, .mission-statement {
+  width: 32.7333333333vw;
+  height: 100%;
+  float: left;
+  background-color: blue; }
+
+.follow-social {
+  background-color: pink; }
+
+.mission-statement {
+  background-color: orange; }
+
+.copyright-info {
+  width: 100%;
+  height: 20%; }
+
 /* For testing only */
-*:not(body):not(html) {
+*:not(body):not(html):not(p) {
   box-sizing: border-box;
   border: 1px dashed #000; }
+
+p {
+  margin: 0; }
 
 .columns {
   min-height: 100px; }
 
 .nav {
   width: 100%;
-  min-height: 150px;
-  background-color: red; }
+  min-height: 150px; }
 
 .feature {
-  width: 100%;
-  min-height: 150px;
   background-color: #37AD2B; }
 
 .clearfix::after {
@@ -48,29 +88,45 @@ h1 {
 
 .footer {
   width: 100%;
-  min-height: 150px;
   background-color: #F0EEE9; }
 
 /* End for testing */
 .parent {
-  width: 90vw;
-  height: 25vw;
+  width: 100vw;
+  height: 40vh;
   margin: 1vh auto; }
 
 .past-events {
-  width: 62.1vw;
-  height: 25vw;
+  width: 69vw;
   float: left;
-  background-color: blue;
+  margin: 0;
+  padding: 15px; }
+
+.facebook-feed {
+  width: 30vw;
+  height: 40vh;
+  float: right;
   margin: 0;
   padding: 0; }
 
-.facebook-feed {
-  width: 27vw;
-  height: 25vw;
-  float: right;
-  background-color: pink;
-  margin: 0;
-  padding: 0; }
+.facebook {
+  height: 300px; }
+
+.card {
+  margin-left: 5px;
+  margin-right: 5px; }
+
+@media (max-width: 599px) {
+  .contact-info, .follow-social, .mission-statement {
+    width: 100vw; }
+
+  .follow-social {
+    width: 100vw; }
+
+  .mission-statement {
+    display: none; }
+
+  .copyright-info {
+    display: none; } }
 
 /*# sourceMappingURL=styles.css.map */
