@@ -18,7 +18,7 @@
 .feature {
   width: 100%;
   min-height: 150px;
-  background-color: green;
+  background-color: $accent-two;
 }
 
 .clearfix::after {
@@ -30,20 +30,44 @@
 .previously {
   width: 75%;
   min-height: 150px;
-  background-color: yellow;
+  background-color: $primary-color;
   float: left;
 }
 
 .social {
   width: 25%;
   min-height: 150px;
-  background-color: blue;
+  background-color: $secondary-color;
   float: right;
 }
 
 .footer {
   width: 100%;
   min-height: 150px;
-  background-color: pink;
+  background-color: $accent-one;
 }
 /* End for testing */
+
+.parent {
+  width: $container-width;
+  height: $container-height;
+  margin: 1vh auto;
+}
+
+.past-events {
+  width: $container-width * 0.69;
+  height: $container-height;
+  float: left;
+  background-color: blue;
+  margin: 0;
+  padding: 0;
+}
+
+.facebook-feed {
+  width: $container-width * 0.3;
+  height: $container-height;
+  float: right;
+  background-color: pink;
+  margin: 0;
+  padding: 0;
+}

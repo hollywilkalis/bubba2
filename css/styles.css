@@ -1,9 +1,13 @@
+.lorem {
+  background-color: orange; }
+
 @font-face {
   font-family: 'mochamattari';
   src: url("../fonts/mochamattari.woff") format("woff");
   font-weight: normal;
   font-style: normal; }
 h1 {
+  color: #3D507E;
   font-family: mochamattari;
   font-size: 40px; }
 
@@ -23,7 +27,7 @@ h1 {
 .feature {
   width: 100%;
   min-height: 150px;
-  background-color: green; }
+  background-color: #37AD2B; }
 
 .clearfix::after {
   content: "";
@@ -33,20 +37,40 @@ h1 {
 .previously {
   width: 75%;
   min-height: 150px;
-  background-color: yellow;
+  background-color: #3D507E;
   float: left; }
 
 .social {
   width: 25%;
   min-height: 150px;
-  background-color: blue;
+  background-color: #C4711D;
   float: right; }
 
 .footer {
   width: 100%;
   min-height: 150px;
-  background-color: pink; }
+  background-color: #F0EEE9; }
 
 /* End for testing */
+.parent {
+  width: 90vw;
+  height: 25vw;
+  margin: 1vh auto; }
+
+.past-events {
+  width: 62.1vw;
+  height: 25vw;
+  float: left;
+  background-color: blue;
+  margin: 0;
+  padding: 0; }
+
+.facebook-feed {
+  width: 27vw;
+  height: 25vw;
+  float: right;
+  background-color: pink;
+  margin: 0;
+  padding: 0; }
 
 /*# sourceMappingURL=styles.css.map */
