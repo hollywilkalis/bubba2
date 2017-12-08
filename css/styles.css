@@ -13,6 +13,12 @@ h2 {
   font-family: mochamattari;
   font-size: 35px; }
 
+h3 {
+  color: #C4711D;
+  font-family: mochamattari;
+  font-size: 32px;
+  margin-top: 10px; }
+
 .card-title {
   color: #3D507E;
   font-family: mochamattari; }
@@ -22,39 +28,49 @@ h2 {
   color: white;
   margin-top: 10px; }
 
+.btn-lg {
+  font-family: mochamattari;
+  font-size: 40px;
+  height: 100%;
+  margin-top: 0;
+  border-radius: 0; }
+
 .footer {
   width: 100vw;
-  height: 40vh; }
+  height: 20vh; }
 
 .one-third {
   width: 100vw;
-  height: 60%;
+  height: 40%;
   display: block; }
 
 .newsletter {
   width: 100%;
-  height: 20%; }
+  height: 40%; }
 
 .contact-info, .follow-social, .mission-statement {
   width: 32.7333333333vw;
   height: 100%;
   float: left;
-  background-color: blue; }
+  padding-left: 10px;
+  background-color: #F0EEE9; }
 
 .follow-social {
-  background-color: pink; }
+  border-left: 2px solid #3D507E; }
 
 .mission-statement {
-  background-color: orange; }
+  border-left: 2px solid #3D507E; }
 
 .copyright-info {
   width: 100%;
   height: 20%; }
 
+.card {
+  max-height: 50%; }
+
 /* For testing only */
-*:not(body):not(html):not(p) {
-  box-sizing: border-box;
-  border: 1px dashed #000; }
+body {
+  background-color: #F0EEE9; }
 
 p {
   margin: 0; }
@@ -66,35 +82,22 @@ p {
   width: 100%;
   min-height: 150px; }
 
-.feature {
-  background-color: #37AD2B; }
+.row {
+  margin-right: 1vw; }
 
 .clearfix::after {
   content: "";
   clear: both;
   display: table; }
 
-.previously {
-  width: 75%;
-  min-height: 150px;
-  background-color: #3D507E;
-  float: left; }
-
-.social {
-  width: 25%;
-  min-height: 150px;
-  background-color: #C4711D;
-  float: right; }
-
 .footer {
-  width: 100%;
-  background-color: #F0EEE9; }
+  width: 100%; }
 
 /* End for testing */
 .parent {
+  background-color: white;
   width: 100vw;
-  height: 40vh;
-  margin: 1vh auto; }
+  margin: 1vh auto 0 auto; }
 
 .past-events {
   width: 69vw;
@@ -104,9 +107,11 @@ p {
 
 .facebook-feed {
   width: 30vw;
-  height: 40vh;
-  float: right;
-  margin: 0;
+  height: auto;
+  float: left;
+  margin-right: 0.75vw;
+  margin-left: 0;
+  margin-top: 65px;
   padding: 0; }
 
 .facebook {
@@ -117,6 +122,9 @@ p {
   margin-right: 5px; }
 
 @media (max-width: 599px) {
+  .card {
+    min-width: 250px; }
+
   .contact-info, .follow-social, .mission-statement {
     width: 100vw; }
 
@@ -127,6 +135,15 @@ p {
     display: none; }
 
   .copyright-info {
+    display: none; }
+
+  .facebook-feed {
     display: none; } }
+@media (min-width: 600px) and (max-width: 1199px) {
+  .facebook-feed {
+    display: none; } }
+@media (min-width: 1200px) {
+  .card {
+    max-width: 300px; } }
 
 /*# sourceMappingURL=styles.css.map */

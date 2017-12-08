@@ -1,8 +1,11 @@
 /* For testing only */
 
-*:not(body):not(html):not(p) {
-  box-sizing:border-box;
-  border:1px dashed #000;
+// *:not(body):not(html):not(p) {
+//   box-sizing:border-box;
+//   border:1px dashed #000;
+// }
+body {
+  background-color: $accent-one;
 }
 
 p {
@@ -19,10 +22,14 @@ p {
 
 }
 
+.row {
+  margin-right: 1vw;
+}
+
 .feature {
   // width: 100%;
   // min-height: 150px;
-  background-color: $accent-two;
+  // background-color: $accent-two;
 }
 
 .clearfix::after {
@@ -31,31 +38,24 @@ p {
     display: table;
 }
 
-.previously {
-  width: 75%;
-  min-height: 150px;
-  background-color: $primary-color;
-  float: left;
-}
-
-.social {
-  width: 25%;
-  min-height: 150px;
-  background-color: $secondary-color;
-  float: right;
-}
+// .follow-social {
+//   width: 25%;
+//   min-height: 150px;
+//   float: right;
+// }
 
 .footer {
   width: 100%;
   // min-height: 150px;
-  background-color: $accent-one;
+  // background-color: $accent-one;
 }
 /* End for testing */
 
 .parent {
+  background-color: white;
   width: $container-width;
-  height: $container-height;
-  margin: 1vh auto;
+  // height: $container-height;
+  margin: 1vh auto 0 auto;
 }
 
 .past-events {
@@ -69,10 +69,12 @@ p {
 
 .facebook-feed {
   width: $container-width * 0.3;
-  height: $container-height;
-  float: right;
+  height: auto;
+  float: left;
   // background-color: pink;
-  margin: 0;
+  margin-right: 0.75vw;
+  margin-left: 0;
+  margin-top: 65px;
   padding: 0;
 }
 
@@ -83,11 +85,17 @@ p {
 .card {
   margin-left: 5px;
   margin-right: 5px;
+
 }
 
 // MEDIA QUERIES
 
 @include mobile {
+  .card {
+    // width: 100%;
+    min-width: 250px;
+
+  }
   .contact-info {
     width: $container-width;
   }
@@ -103,14 +111,27 @@ p {
   .copyright-info {
     display: none;
   }
-}
+
+  .facebook-feed {
+      display: none;
+    }
+  }
+
 
 @include tablet {
+  .facebook-feed {
+      display: none;
+    }
+
 
 }
 
 @include desktop {
   .footer {
     // width: $container-width * 0.9;
+  }
+
+  .card {
+    max-width: 300px;
   }
 }

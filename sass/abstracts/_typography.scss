@@ -17,6 +17,13 @@ h2 {
   font-size: 35px;
 }
 
+h3 {
+  @include font-color($secondary-color);
+  font-family: mochamattari;
+  font-size: 32px;
+  margin-top: 10px;
+}
+
 .card-title {
   @include font-color($primary-color);
   font-family: mochamattari;

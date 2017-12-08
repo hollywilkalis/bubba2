@@ -1,37 +1,44 @@
 .footer {
   width: $container-width;
-  height: $container-height;
+  height: $container-height * 0.5;
 }
 
 .one-third {
   width: $container-width;
-  height: 60%;
+  height: 40%;
   display: block;
 }
 
 .newsletter {
   width: 100%;
-  height: 20%;
+  height: 40%;
 }
 
 .contact-info {
   width: $container-width / 3 - 0.6vw;
   height: 100%;
   float: left;
-  background-color: blue;
+  padding-left: 10px;
+  background-color: $accent-one;
 }
 
 .follow-social {
   @extend .contact-info;
-  background-color: pink;
+  border-left: 2px solid $primary-color;
+  // background-color: pink;
 }
 
 .mission-statement {
   @extend .contact-info;
-  background-color: orange;
+  border-left: 2px solid $primary-color;
+  // background-color: orange;
 }
 
 .copyright-info {
   width: 100%;
   height: 20%;
+}
+
+.card {
+  max-height: 50%;
 }
